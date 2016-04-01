@@ -44,4 +44,4 @@ for x in range(len(myheadlines)):
     description = mydescriptions[x]
     ))
 
-rss.write_xml(open("pyrss2gen.xml", "w"))
+rss.write_xml(open("cssenewss.rss.xml", "w"))
