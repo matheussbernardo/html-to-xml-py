@@ -16,7 +16,8 @@ myrawdata.pop()
 mydescriptions = []
 for value in myrawdata:
     #value = value.strip()
-    final = re.sub('<p .+>.+</p>|<strong>.+</strong>|<div .*?>.+|<.*?>|\d{1,2}/\d{1,2}/\d{1,2}|Read more.+','',value)
+    temp = re.sub('<p .+>.+</p>|<strong>.+</strong>|<div .*?>.+|<.*?>|\d{1,2}/\d{1,2}/\d{1,2}|Read more.+','',value)
+    final = temp[:140]
     mydescriptions.append(final.strip())
 
 print myheadlines
